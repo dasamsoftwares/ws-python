@@ -4,13 +4,11 @@
 
 # Declare list
 print('\n--DECLARE--')
-
 lst_x = ['a',1,3.4,'b','2']
 print(lst_x)
 
 # Print elements in list
 print('\n--SELECT--')
-
 print(lst_x[0:3])
 print(len(lst_x))
 print(lst_x[0:len(lst_x)])
@@ -21,10 +19,11 @@ print(lst_x[-2])
 print(lst_x[-1:-2])
 print(lst_x[-2:-1])
 print(lst_x[-4:-1])
-
 print(lst_x[-1:2])
+
 # Insert/Update element in list
 print('\n--INSERT/UPDATE--')
+
 lst_x.append('new')             #Append adds element in end of list
 print(lst_x)
 lst_x.insert(3,'three')         #Insert element at particular location in list
@@ -36,6 +35,7 @@ print(lst_x)
 
 #Delete element from list
 print('\n--DELETE--')
+
 lst_x.pop()                     #Removes last element from list
 print(lst_x)
 print(lst_x.pop())              # Removes/Returns last element that is removed
@@ -50,6 +50,7 @@ print(lst_x)
 
 #Operations
 print('\n--OPERATIONS--')
+
 lst_y = ['a','b','c']
 print(lst_x+lst_y)              # Concatenate two lists
 print(lst_y*3)                  # Repitition of three lists
@@ -81,4 +82,7 @@ print(type(list(tuple_x)))
 lst_x=[1,5,0,3]                 # Sort a list
 print(lst_x)
 lst_x.sort()
+print(lst_x)
+print(lst_x.clear())
+lst_x.clear()                   # Empties contents of list
 print(lst_x)
